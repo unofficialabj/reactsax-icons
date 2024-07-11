@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const MoneyChange: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -16,7 +16,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
       fill="none"
     >
       <path
-        d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+        d="M2 11V9C2 5.5 4 4 7 4H17C20 4 22 5.5 22 9V15C22 18.5 20 20 17 20H12"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -24,7 +24,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
+        d="M12 14.5C13.3807 14.5 14.5 13.3807 14.5 12C14.5 10.6193 13.3807 9.5 12 9.5C10.6193 9.5 9.5 10.6193 9.5 12C9.5 13.3807 10.6193 14.5 12 14.5Z"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -32,7 +32,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M2 9H3C6 9 7 8 7 5V4"
+        d="M18.5 9.5V14.5"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -40,7 +40,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M22 9H21C18 9 17 8 17 5V4"
+        d="M2 15.5H7.34003C7.98003 15.5 8.5 16.02 8.5 16.66V17.94"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -48,7 +48,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M2 15H3C6 15 7 16 7 19V20"
+        d="M3.21997 14.28L2 15.5L3.21997 16.72"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -56,7 +56,15 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M22 15H21C18 15 17 16 17 19V20"
+        d="M8.5 20.7801H3.15997C2.51997 20.7801 2 20.2601 2 19.6201V18.3401"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M7.28125 22.0003L8.50122 20.7803L7.28125 19.5603"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -67,4 +75,4 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   );
 };
 
-export default MoneyTwo;
+export default MoneyChange;

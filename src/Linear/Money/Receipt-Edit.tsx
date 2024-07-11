@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const ReceiptEdit: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -16,7 +16,28 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
       fill="none"
     >
       <path
-        d="M17 20.5H7C4 20.5 2 19 2 15.5V8.5C2 5 4 3.5 7 3.5H17C20 3.5 22 5 22 8.5V15.5C22 19 20 20.5 17 20.5Z"
+        d="M20.5 11.3V7.04001C20.5 3.01001 19.56 2 15.78 2H8.22C4.44 2 3.5 3.01001 3.5 7.04001V18.3C3.5 20.96 4.96001 21.59 6.73001 19.69L6.73999 19.68C7.55999 18.81 8.80999 18.88 9.51999 19.83L10.53 21.18"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M8 7H16"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M9 11H15"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      />
+      <path
+        d="M18.211 14.7703L14.671 18.3103C14.531 18.4503 14.401 18.7103 14.371 18.9003L14.181 20.2503C14.111 20.7403 14.451 21.0803 14.941 21.0103L16.291 20.8203C16.481 20.7903 16.751 20.6603 16.881 20.5203L20.421 16.9803C21.031 16.3703 21.321 15.6603 20.421 14.7603C19.531 13.8703 18.821 14.1603 18.211 14.7703Z"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -24,39 +45,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15Z"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M2 9H3C6 9 7 8 7 5V4"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M22 9H21C18 9 17 8 17 5V4"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M2 15H3C6 15 7 16 7 19V20"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M22 15H21C18 15 17 16 17 19V20"
+        d="M17.6992 15.2803C17.9992 16.3603 18.8392 17.2003 19.9192 17.5003"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -67,4 +56,4 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   );
 };
 
-export default MoneyTwo;
+export default ReceiptEdit;

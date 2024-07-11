@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const ReceiptMinus: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const Wallet: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -16,23 +16,21 @@ const ReceiptMinus: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
       fill="none"
     >
       <path
-        d="M22 6V8.42C22 10 21 11 19.42 11H16V4.01C16 2.9 16.91 2 18.02 2C19.11 2.01 20.11 2.45 20.83 3.17C21.55 3.9 22 4.9 22 6Z"
+        d="M22 12V17C22 20 20 22 17 22H7C4 22 2 20 2 17V12C2 9.28 3.64 7.38 6.19 7.06C6.45 7.02 6.72 7 7 7H17C17.26 7 17.51 7.00999 17.75 7.04999C20.33 7.34999 22 9.26 22 12Z"
         stroke={colorStyle}
         stroke-width="1.5"
-        stroke-miterlimit="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M2 7V21C2 21.83 2.94 22.3 3.6 21.8L5.31 20.52C5.71 20.22 6.27 20.26 6.63 20.62L8.29 22.29C8.68 22.68 9.32 22.68 9.71 22.29L11.39 20.61C11.74 20.26 12.3 20.22 12.69 20.52L14.4 21.8C15.06 22.29 16 21.82 16 21V4C16 2.9 16.9 2 18 2H7H6C3 2 2 3.79 2 6V7Z"
+        d="M17.7514 7.05C17.5114 7.01 17.2614 7.00001 17.0014 7.00001H7.00141C6.72141 7.00001 6.45141 7.02001 6.19141 7.06001C6.33141 6.78001 6.53141 6.52001 6.77141 6.28001L10.0214 3.02C11.3914 1.66 13.6114 1.66 14.9814 3.02L16.7314 4.79002C17.3714 5.42002 17.7114 6.22 17.7514 7.05Z"
         stroke={colorStyle}
         stroke-width="1.5"
-        stroke-miterlimit="10"
         stroke-linecap="round"
         stroke-linejoin="round"
       />
       <path
-        d="M6.25 10H11.75"
+        d="M22 12.5H19C17.9 12.5 17 13.4 17 14.5C17 15.6 17.9 16.5 19 16.5H22"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-linecap="round"
@@ -42,4 +40,4 @@ const ReceiptMinus: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   );
 };
 
-export default ReceiptMinus;
+export default Wallet;

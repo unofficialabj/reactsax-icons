@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const StrongBoxTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const StrongBox: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -23,43 +23,25 @@ const StrongBoxTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M8 19H16C18 19 19 18 19 16V8C19 6 18 5 16 5H8C6 5 5 6 5 8V16C5 18 6 19 8 19Z"
+        d="M14.3511 10.9101C14.2511 11.6201 13.8311 12.2201 13.2511 12.5801V14.5601C13.2511 15.2501 12.6911 15.8101 12.0011 15.8101C11.3111 15.8101 10.7511 15.2501 10.7511 14.5601V12.5801C10.1711 12.2201 9.75109 11.6201 9.65109 10.9101C9.63109 10.8001 9.62109 10.6801 9.62109 10.5601C9.62109 9.04012 11.0611 7.86012 12.6411 8.28012C13.4411 8.49012 14.0911 9.14012 14.3011 9.94012C14.3911 10.2701 14.4011 10.6001 14.3511 10.9101Z"
         stroke={colorStyle}
         stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M5 9.5H7.48C8.86 9.5 9.98 10.62 9.98 12C9.98 13.38 8.86 14.5 7.48 14.5H5"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M19 9.98999H16"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M19 14H16"
-        stroke={colorStyle}
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-      />
-      <path
-        d="M7.2002 12H7.3002"
-        stroke={colorStyle}
-        stroke-width="2"
         stroke-miterlimit="10"
-        stroke-linecap="round"
-        stroke-linejoin="round"
+      />
+      <path
+        d="M22.0016 10.9102H14.3516"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-miterlimit="10"
+      />
+      <path
+        d="M9.64999 10.9099H2"
+        stroke={colorStyle}
+        stroke-width="1.5"
+        stroke-miterlimit="10"
       />
     </svg>
   );
 };
 
-export default StrongBoxTwo;
+export default StrongBox;

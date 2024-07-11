@@ -27,3 +27,27 @@ function App() {
   );
 }
 ```
+
+### Theme Customization
+
+```jsx
+import { HomeIcon, ThemeProvider } from "reactsax-icons";
+
+const App: React.FC = () => {
+  const theme = {
+    size: 32,
+    color: "blue",
+  };
+
+  return (
+    <ThemeProvider theme={theme}>
+      <div>
+        <HomeIcon />
+        <HomeIcon size={48} color="red" />
+      </div>
+    </ThemeProvider>
+  );
+};
+
+export default App;
+```

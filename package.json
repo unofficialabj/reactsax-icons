@@ -1,19 +1,46 @@
 {
   "name": "reactsax-icons",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "SVG React icons using ES6 imports",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc && webpack"
   },
-  "keywords": ["npm","react","vuesax","icons"],
+
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unofficialabj/reactsax-icons"
+  },
+  "keywords": [
+    "npm",
+    "react",
+    "vuesax",
+    "icons",
+    "svg",
+    "react-components",
+    "ui",
+    "design-system",
+    "frontend",
+    "typescript",
+    "javascript",
+    "web-development",
+    "react-icons",
+    "icon-library",
+    "react-sax",
+    "react-ui"
+  ],
   "author": "Anish Bhakta Joshi",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/unofficialabj/reactsax-icons/issues"
+  },
+  "homepage": "https://github.com/unofficialabj/reactsax-icons#readme",
   "dependencies": {
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
+  
   "devDependencies": {
     "@babel/cli": "^7.24.7",
     "@babel/core": "^7.24.7",

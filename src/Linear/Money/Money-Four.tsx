@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const MoneyFour: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -32,7 +32,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M2 9H3C6 9 7 8 7 5V4"
+        d="M8.5 6H7C5.62 6 4.5 7.12 4.5 8.5V10"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -40,7 +40,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M22 9H21C18 9 17 8 17 5V4"
+        d="M15.5 6H17C18.38 6 19.5 7.12 19.5 8.5V10"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -48,7 +48,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M2 15H3C6 15 7 16 7 19V20"
+        d="M8.5 18H7C5.62 18 4.5 16.88 4.5 15.5V14"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -56,7 +56,7 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
         stroke-linejoin="round"
       />
       <path
-        d="M22 15H21C18 15 17 16 17 19V20"
+        d="M15.5 18H17C18.38 18 19.5 16.88 19.5 15.5V14"
         stroke={colorStyle}
         stroke-width="1.5"
         stroke-miterlimit="10"
@@ -67,4 +67,4 @@ const MoneyTwo: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
   );
 };
 
-export default MoneyTwo;
+export default MoneyFour;
