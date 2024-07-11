@@ -2,7 +2,7 @@
 *
 
 # But not these files...
-!dist/
+!dist
 !README.md
 !LICENSE.md
 !package.json
