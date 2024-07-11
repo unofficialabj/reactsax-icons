@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const ReceiptAdd: FC<IconProps> = ({ size = 24, color = "#292D32" }) => {
+const ReceiptAdd: FC<IconProps> = ({ size, color }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
