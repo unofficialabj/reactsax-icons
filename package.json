@@ -1,11 +1,12 @@
 {
   "name": "reactsax-icons",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "SVG React icons using ES6 imports",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc && webpack"
+    "build": "tsc && webpack",
+    "prepublishOnly": "npm run build"
   },
 
   "repository": {
