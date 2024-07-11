@@ -1,6 +1,6 @@
 {
   "name": "reactsax-icons",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "SVG React icons using ES6 imports",
   "main": "dist/bundle.js",
   "types": "dist/index.d.ts",
