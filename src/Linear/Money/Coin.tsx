@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const Coin: FC<IconProps> = ({ size, color }) => {
+const Coin: FC<IconProps> = ({ size, color, ...props }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -14,6 +14,7 @@ const Coin: FC<IconProps> = ({ size, color }) => {
       height={sizeStyle}
       viewBox="0 0 24 24"
       fill="none"
+      {...props}
     >
       <path
         d="M8 11.4C8 12.17 8.6 12.8 9.33 12.8H10.83C11.47 12.8 11.99 12.25 11.99 11.58C11.99 10.85 11.67 10.59 11.2 10.42L8.8 9.57995C8.32 9.40995 8 9.14995 8 8.41995C8 7.74995 8.52 7.19995 9.16 7.19995H10.66C11.4 7.20995 12 7.82995 12 8.59995"

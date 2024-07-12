@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const TicketStar: FC<IconProps> = ({ size, color }) => {
+const TicketStar: FC<IconProps> = ({ size, color, ...props }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -14,6 +14,7 @@ const TicketStar: FC<IconProps> = ({ size, color }) => {
       height={sizeStyle}
       viewBox="0 0 24 24"
       fill="none"
+      {...props}
     >
       <path
         d="M16.9949 4H6.99488C3.16488 4 2.09488 4.92 2.00488 8.5C3.93488 8.5 5.49488 10.07 5.49488 12C5.49488 13.93 3.93488 15.49 2.00488 15.5C2.09488 19.08 3.16488 20 6.99488 20H16.9949C20.9949 20 21.9949 19 21.9949 15V9C21.9949 5 20.9949 4 16.9949 4Z"

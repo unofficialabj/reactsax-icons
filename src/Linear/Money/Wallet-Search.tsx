@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { IconProps } from "../../types";
 import { useTheme } from "../../ThemeProvider";
 
-const WalletSearch: FC<IconProps> = ({ size, color }) => {
+const WalletSearch: FC<IconProps> = ({ size, color, ...props }) => {
   const theme = useTheme();
 
   const colorStyle = color || theme.color || "#292D32";
@@ -14,6 +14,7 @@ const WalletSearch: FC<IconProps> = ({ size, color }) => {
       height={sizeStyle}
       viewBox="0 0 24 24"
       fill="none"
+      {...props}
     >
       <path
         d="M12 22H17C20 22 22 20 22 17V12C22 9.3 20.3 7.3 17.8 7C17.6 7 17.3 7 17 7H7C6.7 7 6.5 6.99998 6.2 7.09998C3.6 7.39998 2 9.3 2 12C2 12.3 2 12.7 2 13"
